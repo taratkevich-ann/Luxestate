@@ -332,10 +332,8 @@ header {
 }
 
 .scroll-down a::before {
-    content: "\f30a";
+    content: "\2190";
     display: inline-block;
-    font-family: Font Awesome\ 5 Free;
-    font-weight: 900;
     color: #919eb1;
     font-size: 12px;
     margin-right: 14px;
@@ -707,4 +705,106 @@ header {
 }
 .supper-add .add-content a::before{
     left: 54px;
+}
+
+/* FOOTER */
+footer{
+    padding-top: 65px;
+    background-color: #1f373d;
+}
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #8290a2;
+    margin-bottom: 80px;
+}
+.top-footer h2{
+    color: #fff;
+    font-size: 40px;
+    line-height: 64px;
+}
+.top-footer form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-footer form input{
+    display: block;
+    line-height: 70px;
+    width: 390px;
+    padding-left: 28px;
+    font-size: 15px;
+    color: #919eb1;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+}
+.top-footer form button{
+    display: block;
+    line-height: 70px;
+    padding: 0 27px;
+    color: #1f373d;
+    font-size: 13px;
+    background-color: #fff;
+    border: 0;
+    transition: all 0.5s ease-in-out;
+}
+.top-footer form button:hover{
+    background-color: #1f373d;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.down-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.down-footer .logo{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.down-footer .logo:hover, .down-footer .footer-navbar a:hover{
+    color: #8290a2;
+    transition: all 0.5s ease-in-out;
+}
+.down-footer p{
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 135px;
+    margin-top: 70px;
+}
+.down-footer .footer-navbar{
+    display: flex;
+    padding-right: 92px;
+}
+
+.down-footer .footer-navbar p{
+    font-family: 'Montserrat', sans-serif;
+    color: #919eb1;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+.down-footer .footer-navbar-content{
+    padding-right: 105px;
+}
+
+.down-footer .footer-navbar li{
+    list-style: none;
+    margin-bottom: 26px;
+}
+
+.down-footer .footer-navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.5s ease-in-out;
 }
