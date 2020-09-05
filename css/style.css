@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1110px;
     margin: auto;
 }
 
@@ -19,6 +19,8 @@ header {
     padding-bottom: 28px;
     background-color: #fff;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 50;
 }
@@ -167,5 +169,136 @@ header {
     }
 }
 
+/* FIND APARTMENT*/
+.find-apartment{
+    margin-top: 106px;
+    /*display: block;*/
+}
+.find-apartment-content{
+    background-image: url("../images/find-bg_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 336px;
+    position: relative;
+}
+.find-apartment h1{
+    color: #1f373d;
+    font-size: 57px;
+    /*font-weight: 600;*/
+    line-height: 57px;
+    max-width: 577px;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -85px;
 
+}
+.find-apartment-content form{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 142px;
+}
+.find-apartment-content form input{
+    display: block;
+    line-height: 70px;
+    padding-left: 56px;
+    color: #919eb1;
+    font-size: 15px;
+    width: 364px;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.find-apartment-content form i{
+    color: #919eb1;
+    font-size: 16px;
+    position: absolute;
+    left: 27px;
+    top: 50%;
+    margin-top: -8px;
+}
 
+.find-apartment-content form button{
+    display: block;
+    line-height: 70px;
+    padding-right: 31px;
+    padding-left: 36px;
+    color: #1f373d;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #ffcc01;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: 0;
+    transition: all .8s ease-out;
+}
+.find-apartment-content form button:hover,.down-find-apartment-content .find-apartment-contacts a:hover{
+    cursor: pointer;
+    background-color: #ffba00;
+    transition: all .8s ease-out;
+}
+
+.down-find-apartment-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.down-find-apartment-content a{
+    text-decoration: none;
+}
+.down-find-apartment-content .scroll-down{
+    font-size: 12px;
+    font-weight: 500;
+    color: #919eb1;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: relative;
+    left: -39px;
+    bottom: 42px;
+}
+.down-find-apartment-content .scroll-down::before{
+    content: "\f30a";
+    display: inline-block;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    color: #919eb1;
+    font-size: 12px;
+    margin-right: 14px;
+}
+.down-find-apartment-content .find-apartment-contacts{
+    display: flex;
+}
+.down-find-apartment-content .find-apartment-contacts a{
+    display: block;
+    color: #1f373d;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #ffcc01;
+    min-width: 297px;
+    position: relative;
+    transition: all .8s ease-out;
+}
+.down-find-apartment-content .find-apartment-contacts a::before{
+    content: "\f3c5";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    color: #fff;
+    font-size: 27px;
+    position: absolute;
+    left: 30px;
+}
+.down-find-apartment-content .find-apartment-contacts a:first-child::before{
+    content: "\f095";
+    left: 57px;
+    -moz-transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+    -o-transform: rotate(100deg);
+    -ms-transform: rotate(100deg);
+    transform: rotate(100deg);
+}
