@@ -8,6 +8,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h3 {
+    font-size: 40px;
+    color: #1f373d;
+    line-height: 45px;
+    max-width: 430px;
+}
+
 .container {
     max-width: 1110px;
     margin: auto;
@@ -55,24 +62,27 @@ header {
     color: #ffcc01;
     transition: all .4s ease-out;
 }
+
 .navbar-content ul {
     display: flex;
     justify-content: space-between;
 }
+
 .navbar-content ul li {
     list-style: none;
     position: relative;
     z-index: 3;
 }
 
-.navbar-content ul li:first-child{
+.navbar-content ul li:first-child {
     margin-left: 0;
 }
-.navbar-content ul li:last-child{
+
+.navbar-content ul li:last-child {
     margin-right: 0;
 }
 
-.navbar-content ul  li .join_us{
+.navbar-content ul li .join_us {
     margin-left: 79px
 }
 
@@ -92,6 +102,10 @@ header {
     background-color: #ffcc01;
     border-radius: 5px;
     transition: all .8s ease-out;
+}
+
+.burger-menu {
+    display: none;
 }
 
 @media screen and  (max-width: 768px) {
@@ -161,44 +175,53 @@ header {
         display: block;
         text-align: center;
     }
+
     .navbar-content ul li .join_us {
         margin-left: 0;
     }
+
     .navbar-content ul li a {
         font-size: 20px;
     }
 }
 
 /* FIND APARTMENT*/
-.find-apartment{
+.find-apartment {
     margin-top: 106px;
+    margin-bottom: 145px;
     /*display: block;*/
 }
-.find-apartment-content{
+
+.find-apartment-content {
     background-image: url("../images/find-bg_03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 336px;
     position: relative;
+    left: 66px;
 }
-.find-apartment h1{
+
+.find-apartment h1 {
     color: #1f373d;
     font-size: 57px;
     /*font-weight: 600;*/
     line-height: 57px;
     max-width: 577px;
     position: absolute;
-    bottom: 50%;
-    margin-bottom: -85px;
+    bottom: 64%;
+    /*margin-bottom: -85px;*/
 
 }
-.find-apartment-content form{
+
+.find-apartment-content form {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    left: -6%;
     margin-bottom: 142px;
 }
-.find-apartment-content form input{
+
+.find-apartment-content form input {
     display: block;
     line-height: 70px;
     padding-left: 56px;
@@ -209,7 +232,8 @@ header {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.find-apartment-content form i{
+
+.find-apartment-content form i {
     color: #919eb1;
     font-size: 16px;
     position: absolute;
@@ -218,7 +242,7 @@ header {
     margin-top: -8px;
 }
 
-.find-apartment-content form button{
+.find-apartment-content form button {
     display: block;
     line-height: 70px;
     padding-right: 31px;
@@ -233,46 +257,20 @@ header {
     outline: 0;
     transition: all .8s ease-out;
 }
-.find-apartment-content form button:hover,.down-find-apartment-content .find-apartment-contacts a:hover{
+
+.find-apartment-content form button:hover, .down-find-apartment-content .find-apartment-contacts a:hover {
     cursor: pointer;
     background-color: #ffba00;
     transition: all .8s ease-out;
 }
 
-.down-find-apartment-content{
+.find-apartment-contacts {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
-.down-find-apartment-content a{
+
+.find-apartment-contacts a {
     text-decoration: none;
-}
-.down-find-apartment-content .scroll-down{
-    font-size: 12px;
-    font-weight: 500;
-    color: #919eb1;
-    -moz-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    position: relative;
-    left: -39px;
-    bottom: 42px;
-}
-.down-find-apartment-content .scroll-down::before{
-    content: "\f30a";
-    display: inline-block;
-    font-family: Font Awesome\ 5 Free;
-    font-weight: 900;
-    color: #919eb1;
-    font-size: 12px;
-    margin-right: 14px;
-}
-.down-find-apartment-content .find-apartment-contacts{
-    display: flex;
-}
-.down-find-apartment-content .find-apartment-contacts a{
     display: block;
     color: #1f373d;
     font-weight: 600;
@@ -284,7 +282,8 @@ header {
     position: relative;
     transition: all .8s ease-out;
 }
-.down-find-apartment-content .find-apartment-contacts a::before{
+
+.find-apartment-contacts a::before {
     content: "\f3c5";
     font-family: Font Awesome\ 5 Free;
     font-weight: 900;
@@ -293,7 +292,8 @@ header {
     position: absolute;
     left: 30px;
 }
-.down-find-apartment-content .find-apartment-contacts a:first-child::before{
+
+.find-apartment-contacts a:first-child::before {
     content: "\f095";
     left: 57px;
     -moz-transform: rotate(100deg);
@@ -301,4 +301,86 @@ header {
     -o-transform: rotate(100deg);
     -ms-transform: rotate(100deg);
     transform: rotate(100deg);
+}
+
+/* SCROLL DOWN*/
+.scroll-down{
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    left: 19%;
+    top: 63%;
+
+}
+.scroll-down a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #919eb1;
+}
+
+.scroll-down a::before {
+    content: "\f30a";
+    display: inline-block;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    color: #919eb1;
+    font-size: 12px;
+    margin-right: 14px;
+}
+
+/* STATISTIC */
+.statistic-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.left-part-statistic h3 {
+    margin-bottom: 71px;
+}
+
+.left-part-statistic p {
+    color: #1f373d;
+    font-size: 13px;
+    line-height: 32px;
+    max-width: 535px;
+    margin-bottom: 50px;
+}
+
+.right-part-statistic {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.right-part-statistic .right-part-statistic-content {
+    background-color: #f6f5f4;
+    padding: 66px 0 71px;
+    width: 200px;
+    margin: 0 15px 30px;
+}
+.right-part-statistic .no-left-margin{
+    margin-left: 0;
+}
+.right-part-statistic .no-right-margin{
+    margin-right: 0;
+}
+.right-part-statistic .right-part-statistic-content h5 {
+    font-size: 40px;
+    color: #ffcc01;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.right-part-statistic .right-part-statistic-content p {
+    color: #1f373d;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
 }
