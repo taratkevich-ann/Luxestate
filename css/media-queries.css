@@ -1,4 +1,8 @@
 @media screen and (max-width: 1681px) {
+    .find-new-apartment h1 {
+        bottom: 43%;
+    }
+
     .scroll-down {
         left: 14%;
         top: 52%;

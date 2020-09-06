@@ -28,48 +28,22 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count4", 0, 14, 2000);
 });
 
-/* SLIDER */
-
-// var slide = 0,
-//     slides = document.querySelectorAll('.slider-content'),
-//     numSlides = slides.length,
-//
-//     //Functions!!
-//     currentSlide = function() {
-//         var itemToShow = Math.abs(slide % numSlides);
-//         [].forEach.call(slides, function(el) {
-//             el.classList.remove('slideActive')
-//         });
-//         slides[itemToShow].classList.add('slideActive');
-//         resetProgress();
-//         resetInterval();
-//     },
-//     next = function() {
-//         slide++;
-//         currentSlide();
-//     },
-//     prev = function() {
-//         slide--;
-//         currentSlide();
-//     },
-//     resetProgress = function() {
-//         var elm = document.querySelector('.progressbar'),
-//             newone = elm.cloneNode(true),
-//             x = elm.parentNode.replaceChild(newone, elm);
-//     },
-//     resetslide = function() {
-//         var elm = document.querySelector('.slider-content'),
-//             newone = elm.cloneNode(true),
-//             x = elm.parentNode.replaceChild(newone, elm);
-//     },
-//     resetInterval = function() {
-//         clearInterval(autonext);
-//         autonext = setInterval(function() {
-//             slide++;
-//             currentSlide();
-//         }, 5000);
-//     },
-//     autonext = setInterval(function() {
-//         next();
-//     }, 5000);
+function createSmoothScroll() {
+    console.log("entrance");
+    let anchors = document.querySelectorAll('header a[href*="#"');
+    for(let i = 0; i < anchors.length-1; i++) {
+        let anchor = anchors[i];
+        if (anchor) {
+            anchor.addEventListener('click', function (e){
+                e.preventDefault();
+                let anchorId = this.getAttribute('href');
+                console.log(anchorId);
+                document.querySelector(anchorId).scrollIntoView({
+                    behavior: "smooth", block: "start"
+                })
+            })
+        }
+    }
+}
+createSmoothScroll();
 
