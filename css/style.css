@@ -180,10 +180,11 @@ header {
     transition: all .8s ease-out;
 }
 
-.find-new-apartment-content form button:hover, .down-find-apartment-content .find-apartment-contacts a:hover, .supper-add .add-content a:hover {
+.find-new-apartment-content form button:hover, .find-apartment-contacts a:hover, .for-rent form button:hover, .for-rent-form a:hover, .supper-add .add-content a:hover {
     cursor: pointer;
     background-color: #ffba00;
-    transition: all .8s ease-out;
+    color: #fff;
+    transition: all .5s ease-out;
 }
 
 .find-apartment-contacts {
@@ -414,11 +415,6 @@ header {
     font-size: 15px;
     background-color: #fff;
     border-radius: 5px;
-    transition: all 0.8s ease-in-out;
-}
-
-.for-rent-form a:hover {
-    background-color: #ffcc01;
     transition: all 0.8s ease-in-out;
 }
 
@@ -676,12 +672,6 @@ header {
 .add-content .add-content-text p {
     max-width: 472px;
 }
-
-
-/*.add-content .second-add-content-title, .add-content .second-add-content-par {*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*}*/
 
 .add-content .add-content-third-text {
     margin-bottom: 40px;
