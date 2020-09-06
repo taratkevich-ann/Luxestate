@@ -1,3 +1,10 @@
+@media screen and (max-width: 1681px) {
+    .scroll-down {
+        left: 14%;
+        top: 52%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .navbar-content ul li .join_us {
         margin-left: 23px;
@@ -548,22 +555,27 @@
     }
 }
 
-@media screen and  (max-width: 281px){
-    .top-footer form input, .find-new-apartment-content form input, .for-rent form input, .add-content .add-content-img{
+@media screen and  (max-width: 281px) {
+    .top-footer form input, .find-new-apartment-content form input, .for-rent form input, .add-content .add-content-img {
         width: 270px;
     }
+
     .slides .slider-text a::before {
         margin-left: 12px;
     }
-    .add-content .add-content-text h5{
+
+    .add-content .add-content-text h5 {
         font-size: 22px;
     }
-    .supper-add .add-content a, .find-apartment-contacts a{
+
+    .supper-add .add-content a, .find-apartment-contacts a {
         min-width: 240px;
     }
+
     .supper-add .add-content a::before {
         left: 22px;
     }
+
     .supper-add .add-content .add-content-first-link {
         left: 7%;
         bottom: 51%;
